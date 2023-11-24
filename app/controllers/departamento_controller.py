@@ -26,7 +26,7 @@ class DepartamentoController:
 
         return resposta
 
-    @departamento.route('<int:id_departamento>', method=["GET"])
+    @departamento.route('<int:id_departamento>', methods=["GET"])
     def obter_departamento_por_id(id_departamento):
 
         departamento = Departamento.query.get(id_departamento)
@@ -48,10 +48,10 @@ class DepartamentoController:
     @departamento.route('/', methods=["POST"])
     def adicionar_departamentos():
         pass
-    @departamento.route('/<int: id_departamento>', method=["PUT"])
+    @departamento.route('/<int: id_departamento>', methods=["PUT"])
     def atualizar_departamento(id_departamento):
         pass
 
-    @departamento.route('/<int: id_departamento>', method=["DELETE"])
+    @departamento.route('/<int: id_departamento>', methods=["DELETE"])
     def excluir_departamento(id_departamento):
         pass
