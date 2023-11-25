@@ -1,5 +1,4 @@
 from flask import Blueprint, make_response, jsonify
-from app.models import departamento
 from app.models.departamento import Departamento
 
 
